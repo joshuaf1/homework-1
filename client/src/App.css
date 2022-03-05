@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+#App {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#title {
+    text-align: center;
+    font-size: 36px;
+    margin: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+    text-align: center;
+    font-size: 16px;
+    margin: 1%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form input {
+    margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.form button {
+    margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#tableOfUsers {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display:table;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#tableCaption {
+    display: table-caption;
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#tableHeader {
+    display: table-header-group;
+    background-color: cadetblue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#tableBody {
+    display: table-row-group;
+}
+
+.tableHeaderCell {
+    display: table-cell;
+    padding: 10px;
+    text-align: justify;
+    border-bottom: 1px solid black;
+}
+
+.tableRow {
+    display: table-row;
+    background-color: aliceblue;
+}
+
+.tableCell {
+    display: table-cell;
+    padding: 10px;
+    border-bottom: 1px solid black;
 }
