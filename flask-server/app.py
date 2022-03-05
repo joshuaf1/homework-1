@@ -5,8 +5,8 @@ from flask_cors import CORS
 app = Flask(__name__)
 cors = CORS(app)
 
-db = SQLAlchemy(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+db = SQLAlchemy(app)
 
 class Users(db.Model):
     name = db.Column(db.String(200), nullable=False)
